@@ -8,4 +8,4 @@ USE code
 ### VJoy
 This application uses [vjoy](https://sourceforge.net/projects/vjoystick/).<br>
 Prepare the first device as shown<br>
-<img src="" width=auto height=auto>
+<img src="image.png" width=auto height=auto>
