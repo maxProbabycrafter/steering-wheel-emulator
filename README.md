@@ -7,5 +7,8 @@ USE code
 
 ### VJoy
 This application uses [vjoy](https://sourceforge.net/projects/vjoystick/).<br>
-Prepare the first device as shown<br>
+Prepare the first device as shown<br><br>
 <img src="image.png" width=auto height=auto>
+
+### Run
+Run the code with [program.py](program.py)
