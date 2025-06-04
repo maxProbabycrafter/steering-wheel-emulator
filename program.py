@@ -5,27 +5,31 @@ from colorama import Back, Fore
 
 colorama.init(autoreset=True)
 
+COLORS = {
+    "important" : Fore.LIGHTRED_EX,
+    "highlight" : Fore.BLACK + Back.WHITE
+    }
+
 OUTPUTS = [
-f"""{Fore.RED}Initialization...{Fore.RESET}
-Please move your mouse to the {Fore.RED}BOTTOM_LEFT{Fore.RESET} corner
-And Press {Fore.BLACK + Back.WHITE}-Ctrl+F12-{Fore.RESET + Back.RESET} to continue.\n""",
+f"""{COLORS['important']}Initialization...{Fore.RESET}
+Please move your mouse to the {COLORS['important']}BOTTOM_LEFT{Fore.RESET} corner
+And Press {COLORS['highlight']}-Ctrl+F12-{Fore.RESET + Back.RESET} to continue.\n""",
 
-f"""{Fore.RED}Initialization...{Fore.RESET}
-Set the steering wheel in the {Fore.RED}middle{Fore.RESET}
-And Press {Fore.BLACK + Back.WHITE}-Ctrl+F12-{Fore.RESET + Back.RESET} to continue.\n""",
+f"""{COLORS['important']}Initialization...{Fore.RESET}
+Set the steering wheel in the {COLORS['important']}middle{Fore.RESET}
+And Press {COLORS['highlight']}-Ctrl+F12-{Fore.RESET + Back.RESET} to continue.\n""",
 
-f"""Choose the version {Fore.BLACK + Back.WHITE}(enter only a number){Fore.RESET + Back.RESET}
-   1.V1 {Fore.RED}( X axis Steering | Z axis +50% Throttle | Z axis -50% Break )
+f"""Choose the version {COLORS['highlight']}(enter only a number){Fore.RESET + Back.RESET}
+   1.V1 {COLORS['important']}( X axis Steering | Z axis +50% Throttle | Z axis -50% Break )
 Or{Fore.RESET} 5.QUIT Application.\n""",
 
-f"""{Fore.RED}Invalid version selected.{Fore.RESET}\n""",
+f"""{COLORS['important']}Invalid version selected.{Fore.RESET}\n""",
 
-f"""{Fore.RED}Initialization Done.{Fore.RESET} Press {Fore.BLACK + Back.WHITE}-Ctrl+F12-{Fore.RESET + Back.RESET} to start Emulating.\n""",
+f"""{COLORS['important']}Initialization Done.{Fore.RESET} Press {COLORS['highlight']}-Ctrl+F12-{Fore.RESET + Back.RESET} to start Emulating.\n""",
 
-f"""{Fore.RED}Steering Wheel Emulating...{Fore.RESET}\n""",
+f"""{COLORS['important']}Steering Wheel Emulating...{Fore.RESET}\n""",
 
-f"""{Fore.RED}Exiting Emulation...{Fore.RESET}\n"""
-
+f"""{COLORS['important']}Exiting Emulation...{Fore.RESET}\n"""
 ]
 
 try:
