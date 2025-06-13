@@ -61,7 +61,7 @@ try:
         
         try:
             print(OUTPUTS[5])
-            code.Main()
+            code.Main(MaxMouseRng)
         except KeyboardInterrupt:
             code.VjoyReset_input()
             print(OUTPUTS[6]) #reset the inputs to nutural values on KeyboardInterrupt s .

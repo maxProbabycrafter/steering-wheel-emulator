@@ -16,11 +16,11 @@ device = VJoyDevice(1)
 Steering = HID_USAGE_X
 Throttle_Break = HID_USAGE_Z
 
-def Main():
+def Main(MouseRange):
     while True:
         cordinates = mouse_get_pos()
-        device.set_axis(Steering, cordinates[0] * 21)
-        device.set_axis(Throttle_Break, cordinates[1] * 37)
+        device.set_axis(Steering, cordinates[0] * MAX_AXIS // MouseRange[0])
+        device.set_axis(Throttle_Break, cordinates[1] * MAX_AXIS // MouseRange[1])
         sleep(0.01)
 
 def VjoyReset_input():
